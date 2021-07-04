@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* header */
+.logo {
+	height: 64px;
+	padding-left: 40px;
+	overflow: hidden;
+	color: rgba(0, 0, 0, .85);
+	font-size: 30px;
+	font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	line-height: 64px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+.ant-col-2 {
+    display: block;
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+    line-height: 64px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* body */
+.ant-layout-sider-children {
+    height: 100%;
+    margin-top: -0.1px;
+    padding-top: 0.1px;
+    background-color: white;
 }
+
+.ant-layout {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 0;
+    background: #f0f0f0;
+}
+
+body {
+    color: #9e9e9e;
+    font: 12px/20px "Microsoft Yahei", arial,sans-serif;
+    background: #f0f0f0;
+    font-weight: normal;
+}
+
+* {margin: 0;padding: 0;list-style: none;}

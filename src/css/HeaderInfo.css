@@ -1,0 +1,9 @@
+.ant-row {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+}
+.welcome {
+    margin-top: 20px;
+    font-size: large;
+}

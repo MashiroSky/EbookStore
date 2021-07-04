@@ -1,0 +1,68 @@
+.bookname {
+    font-size: x-large;
+    color: black;
+    margin-bottom: 7px;
+}
+
+.price {
+    font-style: inherit;
+    color: black;
+}
+
+.bookInfor {
+    width: 1000px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.bookInfor .bookL {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;
+    width: 26.9%;
+    justify-content: center;
+    display: flex;
+    border-right-color: #f0f0f0;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.bookInfor .bookR {
+    float: left;
+    width: 73.1%;
+    overflow: hidden;
+    padding-bottom: 27px;
+    border-left: 1px solid #f0f0f0;
+    box-sizing: border-box;
+}
+
+.bookR .bookinf01 {
+    padding: 22px 40px 0 30px;
+    height: 72px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.bookR .bookinf01 .bookname span {
+    float: right;
+    font-size: 20px;
+}
+
+.bookR .bookinf02 {
+    padding: 24px 40px 0 30px;
+    height: 98px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.bookR .bookinf02 .left p .price {
+    color: #212121;
+}
+
+.bookR .bookinf03 {
+    padding: 24px 40px 0 30px;
+}
+
+.bookContent {
+    width: 1000px;
+    margin: 42px auto 0;
+    position: relative;
+}
