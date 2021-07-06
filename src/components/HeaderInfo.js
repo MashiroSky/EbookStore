@@ -31,7 +31,7 @@ class HeaderInfo extends Component {
         if (user === null) return (
             <div className='HeaderInfo'>
                 <Row style={{ height: 64 }}>
-                    <Col span={6}><p className='logo'>EbookStore</p></Col>
+                    <Col span={6}><Link to='/'><p className='logo'>EbookStore</p></Link></Col>
                     <Col span={9}></Col>
 
                     <Col span={5}>
@@ -80,7 +80,7 @@ class HeaderInfo extends Component {
             return (
                 <div className='HeaderInfo'>
                     <Row style={{ height: 64 }}>
-                        <Col span={6}><p className='logo'>EbookStore</p></Col>
+                    <Col span={6}><Link to='/'><p className='logo'>EbookStore</p></Link></Col>
                         <Col span={9}></Col>
 
                         <Col span={5}>
