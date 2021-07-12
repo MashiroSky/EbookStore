@@ -57,7 +57,12 @@ class Login extends Component {
     showModal_Login() {
         this.setState({ isModalVisible_Login: true })
     }
-
+    
+    componentWillUnmount = () => {
+        this.setState = (state,callback)=>{
+          return;
+        };
+    }
     render() {
         return (
             <div>

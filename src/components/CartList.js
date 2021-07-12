@@ -147,6 +147,7 @@ export class CartList extends Component {
                             onClick: () => console.log(record)
                         }
                     }}
+                    rowKey={record => record.id}
                 />
                 <Button onClick={() => this.Clear()}>全部购买</Button>
             </div>

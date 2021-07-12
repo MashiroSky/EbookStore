@@ -27,7 +27,7 @@ export default class admin extends Component {
         ).catch(error => console.log(error))
     }
 
-    columns = [
+    user_columns = [
         { title: "用户名", dataIndex: "username", key: "username" },
         {
             title: "用户类型", key: "user_type",
@@ -49,9 +49,8 @@ export default class admin extends Component {
         return (
             <div>
                 <HeaderInfo />
-                <h2>所有用户</h2>
-                <Table columns={this.columns} dataSource={this.state.userList}/>
-                
+                <h2>用户管理</h2>
+                <Table columns={this.user_columns} dataSource={this.state.userList} />
             </div>
         )
     }

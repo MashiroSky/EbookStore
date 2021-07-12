@@ -25,19 +25,34 @@ export default class HomeView extends Component {
             )
         }
     }
+
     componentWillUnmount() {
         this.setState = (state, callback) => {
             return;
         };
     }
+
+    UpdateState() {
+        console.log("HomeView执行UpdateState")
+        fetch(`http://localhost:8080/booklist`).then(
+            response => response.json()
+        ).then(
+            response => {
+                console.log(response)
+                this.setState({ booklist: response })
+            }
+        ).catch(
+            error => { console.log(error) }
+        )
+    }
+
     render() {
         console.log("HomeView执行render()")
         return (
             <Layout>
                 <HeaderInfo user={this.state.user} />
-                {/* <Advertising /> */}
                 <BookList data={typeof (this.props.location.data) != "undefined" ?
-                    this.props.location.data : this.state.booklist} />
+                    this.props.location.data : this.state.booklist} UpdateState={() => this.UpdateState()} />
             </Layout>
         )
     }

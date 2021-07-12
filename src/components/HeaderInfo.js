@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Menu, Dropdown, Button } from 'antd'
+import { Row, Col, Menu, Dropdown } from 'antd'
 import { DownOutlined } from '@ant-design/icons';
 import '../css/HeaderInfo.css'
 import 'antd/dist/antd.css'
@@ -12,9 +12,6 @@ import { LoginAction, LogoutAction } from '../redux/action_creator'
 import { withRouter } from 'react-router'
 
 class HeaderInfo extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     Logout() {
         store.dispatch(LogoutAction())
@@ -64,10 +61,10 @@ class HeaderInfo extends Component {
             const admin_menu = (
                 <Menu>
                     <Menu.Item>
-                        <Link to='/Cart'>我的购物车</Link>
+                        <Link to='/Cart'>购物车</Link>
                     </Menu.Item>
                     <Menu.Item>
-                        <Link to='/Order'>我的订单</Link>
+                        <Link to='/Order'>订单管理</Link>
                     </Menu.Item>
                     <Menu.Item>
                         <Link to='/Admin'>系统管理</Link>
